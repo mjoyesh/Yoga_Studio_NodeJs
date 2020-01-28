@@ -1,0 +1,66 @@
+$content-color: #888484;
+
+.about-us {
+  display: flex;
+  padding-top: 50px;
+  margin-top: 20px;
+  .about-us-details {
+    margin-right: 50px;
+    padding-right: 30px;
+    .about-us-content {
+      width: 400px;
+      line-height: 1.5;
+      color: $content-color;
+      font-weight: 300;
+      padding-top: 25px;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+  .yoga-images {
+    position: relative;
+    padding-top: 20px;
+    .do-yoga1 {
+      width: 500px;
+      height: 350px;
+    }
+    .do-yoga2 {
+      width: 350px;
+      height: 230px;
+      position: absolute;
+      right: -40px;
+      bottom: -35px;
+      border: 10px solid #fff;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .about-us {
+    display: block;
+    padding-bottom: 55px;
+    .about-us-details {
+      padding: 20px;
+      margin: 0;
+      .about-us-content {
+        width: initial;
+      }
+    }
+    .yoga-images {
+      .do-yoga1 {
+        width: 210px;
+        height: 156px;
+        display: block;
+        margin: 0 auto;
+      }
+      .do-yoga2 {
+        width: 150px;
+        height: 120px;
+        right: 15px;
+        bottom: -60px;
+      }
+    }
+  }
+}

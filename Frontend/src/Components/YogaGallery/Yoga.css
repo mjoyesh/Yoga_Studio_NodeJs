@@ -1,0 +1,52 @@
+.border {
+  display: block;
+  border-top: 2px solid #6610f2;
+  width: 58px; }
+
+.yoga-gallery {
+  padding-top: 40px; }
+  .yoga-gallery .yoga-border {
+    margin: 0 auto; }
+  .yoga-gallery h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600; }
+  .yoga-gallery .buttons {
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 257px;
+    margin: 0 auto; }
+    .yoga-gallery .buttons button {
+      border: 2px solid #6610f2;
+      background: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: #6610f2;
+      color: #ffffff;
+      padding: 5px 8px;
+      font-size: 15px;
+      outline: none; }
+      .yoga-gallery .buttons button:hover {
+        background-color: #ffffff;
+        color: #000000; }
+  .yoga-gallery .yoga-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 45px; }
+    .yoga-gallery .yoga-images img {
+      width: 320px;
+      height: 215px;
+      border-radius: 4px;
+      margin-bottom: 20px; }
+
+@media (max-width: 520px) {
+  .yoga-gallery .yoga-images img {
+    display: block;
+    margin: 10px auto;
+    width: 286px;
+    height: 212px; } }
+
+/*# sourceMappingURL=Yoga.css.map */

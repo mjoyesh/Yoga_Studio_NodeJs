@@ -1,0 +1,134 @@
+.footer-top {
+  display: flex; }
+  .footer-top .footer-about {
+    width: 590px; }
+    .footer-top .footer-about h2 {
+      font-size: 20px;
+      font-weight: 400; }
+    .footer-top .footer-about p {
+      font-weight: 200;
+      line-height: 1.5;
+      color: #888484; }
+  .footer-top .quick-links {
+    width: 316px;
+    padding-left: 25px; }
+    .footer-top .quick-links ul {
+      list-style: none;
+      padding: 0;
+      line-height: 2.5;
+      font-weight: 400;
+      color: #888484; }
+    .footer-top .quick-links h2 {
+      font-size: 20px;
+      font-weight: 400; }
+  .footer-top .yogas {
+    padding-top: 50px;
+    width: 306px; }
+    .footer-top .yogas ul {
+      list-style: none;
+      padding: 0;
+      font-weight: 400;
+      color: #888484; }
+      .footer-top .yogas ul li {
+        line-height: 3; }
+        .footer-top .yogas ul li:first-child {
+          line-height: 1.2; }
+  .footer-top .subscribe {
+    padding-left: 20px; }
+    .footer-top .subscribe h2 {
+      font-size: 20px;
+      font-weight: 400; }
+    .footer-top .subscribe p {
+      font-weight: 200;
+      line-height: 1.5;
+      color: #888484; }
+    .footer-top .subscribe .email-input {
+      display: flex; }
+      .footer-top .subscribe .email-input input {
+        padding: 12px 10px;
+        width: 100%;
+        font-size: 15px;
+        border: 1px solid #ffffff;
+        outline: none;
+        background-color: transparent;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: initial;
+        color: #ffffff; }
+      .footer-top .subscribe .email-input button {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 3px solid #6610f2;
+        outline: none;
+        background-color: #6610f2;
+        cursor: pointer;
+        color: #fff;
+        font-size: 15px; }
+        .footer-top .subscribe .email-input button:hover {
+          background-color: #8467b4;
+          border: 3px solid #8467b4; }
+    .footer-top .subscribe .follow-us-head {
+      padding-top: 30px;
+      padding-bottom: 15px; }
+    .footer-top .subscribe .social {
+      display: flex;
+      justify-content: space-between;
+      width: 162px; }
+      .footer-top .subscribe .social a {
+        text-decoration: none;
+        color: #888484; }
+
+.footer {
+  background-color: #333333;
+  padding-top: 50px;
+  color: #ffffff; }
+
+.footer-bottom {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+  font-weight: 200;
+  color: #888484; }
+  .footer-bottom .colorlib {
+    font-weight: 400; }
+  .footer-bottom .heart {
+    color: #ff3366;
+    font-size: 23px; }
+
+@media (max-width: 520px) {
+  .footer {
+    padding: 50px 20px; }
+
+  .footer-top {
+    display: block; }
+    .footer-top .footer-about {
+      width: initial; }
+      .footer-top .footer-about h2 {
+        text-align: center; }
+      .footer-top .footer-about p {
+        text-align: center; }
+    .footer-top .quick-links {
+      width: initial;
+      padding: 0; }
+      .footer-top .quick-links h2 {
+        text-align: center; }
+      .footer-top .quick-links ul {
+        display: flex;
+        justify-content: space-between; }
+    .footer-top .yogas {
+      padding-top: 10px;
+      width: initial;
+      text-align: center; }
+    .footer-top .subscribe {
+      padding: 0; }
+      .footer-top .subscribe h2 {
+        text-align: center; }
+      .footer-top .subscribe p {
+        text-align: center; }
+      .footer-top .subscribe .social {
+        margin: 0 auto; }
+
+  .footer-bottom {
+    padding-bottom: 0; } }
+
+/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,176 @@
+$purple : #6610f2;
+$content-color: #888484;
+
+.footer-top {
+  display: flex;
+  .footer-about {
+    width: 590px;
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+    p {
+      font-weight: 200;
+      line-height: 1.5;
+      color: $content-color;
+    }
+  }
+  .quick-links {
+    width: 316px;
+    padding-left: 25px;
+    ul {
+      list-style: none;
+      padding: 0;
+      line-height: 2.5;
+      font-weight: 400;
+      color: $content-color;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+  .yogas {
+    padding-top: 50px;
+    width: 306px;
+    ul {
+      list-style: none;
+      padding: 0;
+      font-weight: 400;
+      color: $content-color;
+
+      li {
+        line-height: 3;
+        &:first-child {
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+  .subscribe {
+    padding-left: 20px;
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+    p {
+      font-weight: 200;
+      line-height: 1.5;
+      color: $content-color;
+    }
+    .email-input {
+      display: flex;
+      input {
+        padding: 12px 10px;
+        width: 100%;
+        font-size: 15px;
+        border: 1px solid #ffffff;
+        outline: none;
+        background-color: transparent;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: initial;
+        color: #ffffff;
+      }
+      button {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 3px solid $purple;
+        outline: none;
+        background-color: $purple;
+        cursor: pointer;
+        color: #fff;
+        font-size: 15px;
+        &:hover {
+          background-color: #8467b4;
+          border: 3px solid #8467b4;
+        }
+      }
+    }
+    .follow-us-head {
+      padding-top: 30px;
+      padding-bottom: 15px;
+    }
+    .social {
+      display: flex;
+      justify-content: space-between;
+      width: 162px;
+      a {
+        text-decoration: none;
+        color: $content-color;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #333333;
+  padding-top: 50px;
+  color: #ffffff;
+}
+
+.footer-bottom {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+  font-weight: 200;
+  color: $content-color;
+  .colorlib {
+    font-weight: 400;
+  }
+  .heart {
+    color: #ff3366;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer {
+    padding: 50px 20px;
+  }
+
+  .footer-top {
+    display: block;
+    .footer-about {
+      width: initial;
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    .quick-links {
+      width: initial;
+      padding: 0;
+      h2 {
+        text-align: center;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .yogas {
+      padding-top: 10px;
+      width: initial;
+      text-align: center;
+    }
+    .subscribe {
+      padding: 0;
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      .social {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding-bottom: 0;
+  }
+}

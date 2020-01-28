@@ -1,0 +1,91 @@
+$purple : #6610f2;
+$content-color: #888484;
+
+.schedule {
+  padding-top: 50px;
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .schedule-content {
+    width: 550px;
+    line-height: 1.5;
+    color: $content-color;
+    font-weight: 300;
+  }
+}
+
+.schedule-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  .yoga-details {
+    display: flex;
+    width: 630px;
+    .yoga-wrapper {
+      padding: 20px;
+      width: 260px;
+      h2 {
+        margin: 8px 0;
+        font-weight: 300;
+      }
+      .content {
+        line-height: 1.5;
+        color: $content-color;
+        font-weight: 300
+      }
+      .time , .date {
+        font-size: 14px;
+        margin: 8px 0;
+        font-weight: 300;
+      }
+      button {
+        padding: 6px 8px;
+        border: 2px solid $purple;
+        border-radius: 3px;
+        color: #fff;
+        background-color: $purple;
+        cursor: pointer;
+        outline: none;
+        margin-top: 14px;
+        &:hover {
+          background-color: #ffffff;
+          color: #000000;
+        }
+      }
+    }
+    img {
+      width: 300px;
+      height: 310px;
+      object-fit: cover;
+    }
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .js {
+    justify-content: flex-start;
+  }
+  .je {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 520px) {
+  .schedule {
+    padding: 50px 20px 0;
+    max-width: initial;
+    width: initial;
+    .schedule-content {
+      width: initial;
+    }
+  }
+  .schedule-images {
+    padding: 0;
+    .yoga-details {
+      display: block;
+      width: initial;
+    }
+  }
+}

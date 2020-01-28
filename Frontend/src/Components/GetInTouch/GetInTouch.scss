@@ -1,0 +1,125 @@
+$purple : #6610f2;
+$content-color: #888484;
+
+.get-in-touch {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .git-border {
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .git-wrapper {
+    display: flex;
+    justify-content: space-between;
+    form {
+      width: 460px;
+      color: $content-color;
+      font-weight: 300;
+      div {
+        padding-top: 20px;
+      }
+      label {
+        display: block;
+      }
+      .name-phone {
+        display: flex;
+        justify-content: space-between;
+      }
+      input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #c6bfbfc4;
+        margin: 12px 0;
+        outline: none;
+        &:focus {
+          border: 1px solid $purple;
+        }
+      }
+      textarea {
+        width: 100%;
+        height: 160px;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #c6bfbfc4;
+        margin: 12px 0;
+        outline: none;
+        &:focus {
+          border: 1px solid $purple;
+        }
+      }
+      button {
+        padding: 8px 10px;
+        border: 2px solid $purple;
+        border-radius: 4px;
+        color: #fff;
+        background-color: $purple;
+        cursor: pointer;
+        outline: none;
+        margin-top: 5px;
+        font-size: 15px;
+        &:hover {
+          background-color: #ffffff;
+          color: #000000;
+        }
+      }
+    }
+    .contact-details {
+      width: 360px;
+      padding-top: 18px;
+      .detail {
+        padding-left: 30px;
+        padding-top: 20px;
+        line-height: 1.6;
+        color: $content-color;
+        font-weight: 300;
+      }
+      h2 {
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .get-in-touch {
+    .git-wrapper {
+      display: block;
+      form {
+        width: initial;
+        .name-phone {
+          display: block;
+        }
+        div {
+          text-align: center;
+        }
+        textarea {
+          width: 250px;
+        }
+        button {
+          display: block;
+          margin: 0 auto;
+        }
+        input {
+          width: 250px;
+        }
+        label {
+          padding-left: 50px;
+          text-align: left;
+        }
+      }
+      .contact-details {
+        width: initial;
+        padding-top: 30px;
+        text-align: center;
+        .detail {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}

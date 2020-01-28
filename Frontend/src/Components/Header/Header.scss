@@ -1,0 +1,167 @@
+$content-color: #888484;
+
+.header-bg {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.header {
+  //background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/doyoga_hero_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  height: 570px;
+  position: relative;
+}
+
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-top {
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+  .fa-envelope {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: space-between;
+    width: 288px;
+    .email {
+      padding-right: 20px;
+    }
+  }
+  .social {
+    display: flex;
+    justify-content: space-between;
+    width: 128px;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      &:hover {
+        color: $content-color;
+      }
+    }
+  }
+  .header-space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header-bottom {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    color: #ffffff;
+    font-weight: 800;
+  }
+  .header-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    cursor: pointer;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.banner {
+  text-align: center;
+  color: #ffffff;
+  .heading {
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  .content {
+    font-size: 20px;
+    width: calc(100% - 200px);
+    margin: 0 auto;
+  }
+  .play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    .fa-play-circle {
+      width: 58px;
+      height: 58px;
+      color: #ffffff;
+      &:hover {
+        color: $content-color;
+      }
+    }
+    .fa-pause-circle {
+      width: 58px;
+      height: 58px;
+      color: #ffffff;
+      &:hover {
+        color: $content-color;
+      }
+    }
+    span {
+      margin-left: 20px;
+    }
+    .play-vid {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    padding: 0 30px;
+    height: 460px;
+  }
+  .header-top {
+    .social {
+      display: none;
+    }
+  }
+  .header-bottom {
+    padding-top: 15px;
+    .menu {
+      position: relative;
+    }
+    .header-mobile {
+      position: absolute;
+      border: 2px solid #ffffff;
+      right: 0;
+      list-style: none;
+      background: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 0;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+  }
+  .banner {
+    .heading {
+      font-size: 30px;
+    }
+    .content {
+      width: initial;
+    }
+  }
+}

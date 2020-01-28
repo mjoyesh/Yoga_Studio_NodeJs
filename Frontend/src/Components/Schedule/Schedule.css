@@ -1,0 +1,71 @@
+.schedule {
+  padding-top: 50px; }
+  .schedule h1 {
+    font-size: 30px;
+    font-weight: 600; }
+  .schedule .schedule-content {
+    width: 550px;
+    line-height: 1.5;
+    color: #888484;
+    font-weight: 300; }
+
+.schedule-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 50px; }
+  .schedule-images .yoga-details {
+    display: flex;
+    width: 630px; }
+    .schedule-images .yoga-details .yoga-wrapper {
+      padding: 20px;
+      width: 260px; }
+      .schedule-images .yoga-details .yoga-wrapper h2 {
+        margin: 8px 0;
+        font-weight: 300; }
+      .schedule-images .yoga-details .yoga-wrapper .content {
+        line-height: 1.5;
+        color: #888484;
+        font-weight: 300; }
+      .schedule-images .yoga-details .yoga-wrapper .time, .schedule-images .yoga-details .yoga-wrapper .date {
+        font-size: 14px;
+        margin: 8px 0;
+        font-weight: 300; }
+      .schedule-images .yoga-details .yoga-wrapper button {
+        padding: 6px 8px;
+        border: 2px solid #6610f2;
+        border-radius: 3px;
+        color: #fff;
+        background-color: #6610f2;
+        cursor: pointer;
+        outline: none;
+        margin-top: 14px; }
+        .schedule-images .yoga-details .yoga-wrapper button:hover {
+          background-color: #ffffff;
+          color: #000000; }
+    .schedule-images .yoga-details img {
+      width: 300px;
+      height: 310px;
+      object-fit: cover; }
+  .schedule-images .reverse {
+    flex-direction: row-reverse; }
+  .schedule-images .js {
+    justify-content: flex-start; }
+  .schedule-images .je {
+    justify-content: flex-end; }
+
+@media (max-width: 520px) {
+  .schedule {
+    padding: 50px 20px 0;
+    max-width: initial;
+    width: initial; }
+    .schedule .schedule-content {
+      width: initial; }
+
+  .schedule-images {
+    padding: 0; }
+    .schedule-images .yoga-details {
+      display: block;
+      width: initial; } }
+
+/*# sourceMappingURL=Schedule.css.map */
