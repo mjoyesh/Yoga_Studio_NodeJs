@@ -1,27 +1,17 @@
-import React, {Component, Fragment} from 'react';
-import Header from "./Components/Header";
-import YogaGallery from "./Components/YogaGallery";
-import Events from "./Components/Events";
-import AboutUs from "./Components/About Us";
-import Schedule from "./Components/Schedule";
-import GetInTouch from "./Components/GetInTouch";
-import Footer from "./Components/Footer";
-import FeaturedClasses from "./Components/FeaturedClasses";
+import React, {Component} from 'react';
 import store from "./store";
 import { Provider } from "react-redux";
+import Route from './Routes';
+import { renderRoutes } from "react-router-config"
+import { BrowserRouter } from "react-router-dom";
 
 class App extends Component {
     render() {
         return (
             <Provider store={store}>
-               <Header/>
-               <FeaturedClasses />
-               <Schedule />
-               <AboutUs />
-               <Events />
-               <YogaGallery />
-               <GetInTouch />
-               <Footer />
+               <BrowserRouter>
+                    { renderRoutes(Route) }
+               </BrowserRouter>
             </Provider>
         );
     }

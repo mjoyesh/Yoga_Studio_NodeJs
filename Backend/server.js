@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 
-const PORT = 8000;
+const PORT = 10000;
 const app = express();
 
 //middleware
