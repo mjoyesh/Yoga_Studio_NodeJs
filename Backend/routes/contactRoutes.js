@@ -13,7 +13,6 @@ route.post('/', (req, res) => {
   )
   data.save()
   .then(response => {
-    console.log('hello')
     res.status(200).send(response);
   })
   .catch(e => {
