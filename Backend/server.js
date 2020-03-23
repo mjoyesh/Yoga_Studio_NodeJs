@@ -1,5 +1,6 @@
 const express = require('express');
 const contact = require('./routes/contactRoutes');
+const yogaTable = require('./routes/yogaRoutes');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
@@ -22,6 +23,7 @@ let mongoDBUrl = "mongodb://localhost:27017/yoga_studio";
 mongoose.connect(mongoDBUrl, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use('/contact', contact);
+app.use('/yogaStudio', yogaTable);
 
 app.use(express.static(path.join(__dirname, "../Frontend","public")))
 

@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-router-dom";
 
 class HeaderBottom extends Component {
     state = {
@@ -24,8 +25,8 @@ class HeaderBottom extends Component {
                 <div className="menu">
                     {window.innerWidth >= 768 ?
                         <ul className="header-menu">
-                            <li>Home</li>
-                            <li>Classes</li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/yoga-table">Classes</Link></li>
                             <li>Pages</li>
                             <li>About</li>
                             <li>Events</li>

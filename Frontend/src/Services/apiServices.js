@@ -6,3 +6,10 @@ export const contactForm = (data = {}) => ({
   url: GlobalConfig.getApiUrlFromRoot("/contact"),
   data: { ...data }
 });
+
+export const yogaTable = (data = {}) => ({
+  method: "GET",
+  headers: GlobalConfig.getHeaders(["JSON"]),
+  url: GlobalConfig.getApiUrlFromRoot("/yogaStudio"),
+  data: { ...data }
+});
