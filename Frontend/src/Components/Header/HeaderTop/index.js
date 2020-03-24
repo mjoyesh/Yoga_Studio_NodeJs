@@ -10,7 +10,7 @@ class HeaderTop extends Component {
                 <div className="wrapper header-space">
                     <div className="contact">
                         <FontAwesomeIcon icon={faEnvelope} />
-                        <p className="email">info@domain.com</p>
+                        <p className="email">mjoyesh@gmail.com</p>
                         <FontAwesomeIcon icon={faPhoneAlt} />
                         <p>+123445678910</p>
                     </div>
