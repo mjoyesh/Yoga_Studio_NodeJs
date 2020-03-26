@@ -27,11 +27,11 @@ class HeaderBottom extends Component {
                         <ul className="header-menu">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/yoga-table">Classes</Link></li>
-                            <li>Pages</li>
+                            {/* <li>Pages</li>
                             <li>About</li>
                             <li>Events</li>
                             <li>Gallery</li>
-                            <li>Contact</li>
+                            <li>Contact</li> */}
                         </ul>
                         :
                         <Fragment>
@@ -39,13 +39,13 @@ class HeaderBottom extends Component {
                             {
                                 menu ?
                                     <ul className="header-mobile">
-                                        <li>Home</li>
-                                        <li>Classes</li>
-                                        <li>Pages</li>
+                                        <li><Link to="/">Home</Link></li>
+                                        <li><Link to="/yoga-table">Classes</Link></li>
+                                        {/* <li>Pages</li>
                                         <li>About</li>
                                         <li>Events</li>
                                         <li>Gallery</li>
-                                        <li>Contact</li>
+                                        <li>Contact</li> */}
                                     </ul>
                                     :
                                     null
