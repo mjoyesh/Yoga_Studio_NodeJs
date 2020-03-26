@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-// import PropTypes from "prop-types";
-// import { STATUS } from "../../constant";
 import { contactFormAction } from "../../Actions/form.action";
 import './GetInTouch.scss';
-// import { getLocalstorage } from "../../helper";
-// import { get } from "lodash";
-// import request from "../../Services/requestService";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class GetInTouch extends Component {
     constructor(props){
@@ -38,6 +35,7 @@ class GetInTouch extends Component {
             message
         }
         await contactForm(undefined, data);
+        toast.success("Message Has Been Sent !");
     }
 
     render() {
@@ -50,16 +48,16 @@ class GetInTouch extends Component {
                         <div className="name-phone">
                             <div>
                                 <label>Name</label>
-                                <input type="text" name="name" onChange={(e)=>this.handleInputBox(e)}/>
+                                <input type="text" name="name" onChange={(e)=>this.handleInputBox(e)} required/>
                             </div>
                             <div>
                                 <label>Phone</label>
-                                <input type="tel" name="phone" onChange={(e)=>this.handleInputBox(e)}/>
+                                <input type="tel" name="phone" onChange={(e)=>this.handleInputBox(e)} required/>
                             </div>
                         </div>
                         <div>
                             <label>Email</label>
-                            <input type="email" name="email" onChange={(e)=>this.handleInputBox(e)}/>
+                            <input type="email" name="email" onChange={(e)=>this.handleInputBox(e)} required/>
                         </div>
                         <div>
                             <label>Write Message</label>
@@ -78,6 +76,7 @@ class GetInTouch extends Component {
                         </div>
                     </div>
                 </div>
+                <ToastContainer autoClose={2000}/>
             </div>
         );
     }

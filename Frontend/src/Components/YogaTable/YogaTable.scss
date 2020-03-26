@@ -12,7 +12,7 @@
         box-shadow: 1px 1px 15px 1px grey;
         background: linear-gradient(45deg, #4f4545, transparent);
         border-radius: 10px;
-        width: 60%;
+        width: 70%;
         margin: auto;
         padding: 20px;
         font-family: arial;
@@ -27,5 +27,31 @@
         th{
             padding-bottom: 10px;
         }
+    }
+}
+
+@media (max-width: 420px){
+    .yoga-table{
+        height: 100%;
+        padding-bottom: 30px;
+        th, td{
+            padding: 10px;
+        }
+        table{
+            width: 90%;
+            padding: 8px;
+            font-size: 14px;
+        }
+        .breadcrumb{
+            padding: 20px;
+        }
+    }
+}
+
+.breadcrumb{
+    padding: 10px 0 10px 150px;
+    a{
+        color: #000;
+        text-decoration: none;
     }
 }
