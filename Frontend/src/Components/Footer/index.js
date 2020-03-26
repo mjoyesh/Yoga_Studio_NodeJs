@@ -48,7 +48,7 @@ class Footer extends Component {
                     </div>
                 </div>
                 <div className=" footer-bottom wrapper">
-                    Copyright &copy;2019 All rights reserved | This template is made with <span className="heart">&hearts;</span> by <span className="colorlib">Colorlib</span>
+                    Copyright &copy;2019 All rights reserved | This template is made with <span className="heart">&hearts;</span> by <span className="colorlib">Joyesh</span>
                 </div>
             </div>
         );

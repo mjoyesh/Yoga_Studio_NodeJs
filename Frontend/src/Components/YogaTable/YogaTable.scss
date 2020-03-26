@@ -1,0 +1,31 @@
+.yoga-table{
+    height: 100vh;
+    background: #5b4a783d;
+    h1{
+        text-align: center;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    table{
+        border: 5px solid #fff;
+        box-shadow: 1px 1px 15px 1px grey;
+        background: linear-gradient(45deg, #4f4545, transparent);
+        border-radius: 10px;
+        width: 60%;
+        margin: auto;
+        padding: 20px;
+        font-family: arial;
+        font-size: 17px;
+        td{
+            &:first-child, &:nth-child(3), &:last-child{
+                text-align: center;
+            }
+            padding-top: 10px;
+            line-height: 1.5;
+        }
+        th{
+            padding-bottom: 10px;
+        }
+    }
+}
